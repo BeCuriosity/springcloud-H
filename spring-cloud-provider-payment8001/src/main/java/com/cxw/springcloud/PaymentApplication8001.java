@@ -1,7 +1,13 @@
 package com.cxw.springcloud;
 
+import com.cxw.springcloud.dao.PaymentDao;
+import com.cxw.springcloud.entity.Payment;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import javax.annotation.Resource;
 
 /**
  * @ClassName PaymentApplication8001
@@ -11,8 +17,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-public class PaymentApplication8001 {
+public class PaymentApplication8001 implements ApplicationRunner {
+
+    @Resource
+    private PaymentDao paymentDao;
+
     public static void main(String[] args) {
         SpringApplication.run(PaymentApplication8001.class, args);
+    }
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        Payment byId = paymentDao.getById(1L);
+        System.out.println(byId.toString());
     }
 }
