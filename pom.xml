@@ -11,6 +11,9 @@
 
   <modules>
     <module>spring-cloud-provider-payment8001</module>
+      <module>spring-cloud-consumer-order8000</module>
+      <module>spring-cloud-api</module>
+      <module>springcloud-eureka-server</module>
   </modules>
 
   <!--统一管理jar包版本-->

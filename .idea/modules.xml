@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer-order8000/spring-cloud-consumer-order8000.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer-order8000/spring-cloud-consumer-order8000.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-payment8001/spring-cloud-provider-payment8001.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-payment8001/spring-cloud-provider-payment8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-H.iml" filepath="$PROJECT_DIR$/springcloud-H.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" />
     </modules>
   </component>
 </project>
