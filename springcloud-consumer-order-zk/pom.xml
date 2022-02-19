@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-provider-payment8004</artifactId>
-
+    <artifactId>springcloud-consumer-order-zk</artifactId>
     <dependencies>
 
         <!-- zk-client-->
@@ -37,8 +36,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-
 
         <dependency>
             <groupId>com.cxw</groupId>
@@ -75,4 +72,5 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
+
 </project>

@@ -23,8 +23,9 @@ public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
 
-    @GetMapping("/{id}")
+    @GetMapping("/zk/{id}")
     public CommonResult<Payment> getById(@PathVariable("id") Long id) {
-        return new CommonResult<>(200, "success from server: payment-from-zk"+serverPort, null);
+        Payment payment = new Payment(id, "999");
+        return new CommonResult<>(200, "success from zk-provider: "+serverPort, payment);
     }
 }

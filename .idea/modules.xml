@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order8000/spring-cloud-consumer-order8000.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order8000/spring-cloud-consumer-order8000.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-H.iml" filepath="$PROJECT_DIR$/springcloud-H.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order-zk/springcloud-consumer-order-zk.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order-zk/springcloud-consumer-order-zk.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server7001/springcloud-eureka-server7001.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server7001/springcloud-eureka-server7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server7002/springcloud-eureka-server7002.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server7002/springcloud-eureka-server7002.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-provider-payment8002/springcloud-provider-payment8002.iml" filepath="$PROJECT_DIR$/springcloud-provider-payment8002/springcloud-provider-payment8002.iml" />

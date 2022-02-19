@@ -1,9 +1,9 @@
 server:
-  port: 8004
+  port: 7999
 
 spring:
   application:
-    name: cloud-payment-sevice8004
+    name: cloud-consumer-zk7999
   cloud:
     zookeeper:
       connect-string: 139.159.212.210:2181

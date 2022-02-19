@@ -19,6 +19,7 @@
     <module>springcloud-eureka-server7001</module>
       <module>springcloud-provider-payment8002</module>
       <module>springcloud-provider-payment8004</module>
+    <module>springcloud-consumer-order-zk</module>
   </modules>
 
   <!--统一管理jar包版本-->
