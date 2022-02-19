@@ -1,0 +1,18 @@
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eureka7002 #eurekaSever的实例名称
+  client:
+    register-with-eureka: false #不注册自己
+    fetch-registry: false
+    #客户端与eurekaServer交互的地址
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护机制
+    eviction-interval-timer-in-ms: 30000 #定时检测时间，默认60s
+
+spring:
+  application:
+    name: eureka-server-7002
