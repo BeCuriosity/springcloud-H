@@ -5,6 +5,7 @@ import com.cxw.springcloud.entity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -37,6 +38,18 @@ public class OrderController {
     public CommonResult<Payment> getById(@PathVariable Long id) {
         String providerUrl = serverName + "/payments/";
         return restTemplate.getForObject(providerUrl + id, CommonResult.class);
+    }
+
+    @GetMapping("entity/{id}")
+    @ResponseBody
+    public CommonResult getById2(@PathVariable Long id) {
+        String providerUrl = serverName + "/payments/";
+        ResponseEntity<CommonResult> resp = restTemplate.getForEntity(providerUrl + id, CommonResult.class);
+        if(resp.getStatusCode().is2xxSuccessful()){
+            return resp.getBody();
+        } else {
+            return new CommonResult(500, "xxx");
+        }
     }
 
     @GetMapping("/discovery")
