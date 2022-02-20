@@ -21,8 +21,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ApplicationConfig {
 
 
-    AtomicInteger atomicInteger;
-
     @ConditionalOnMissingBean
     @Bean
     @LoadBalanced

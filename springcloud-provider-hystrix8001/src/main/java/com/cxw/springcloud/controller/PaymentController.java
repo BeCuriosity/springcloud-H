@@ -36,4 +36,18 @@ public class PaymentController {
         Payment byId = paymentService.getById(id);
         return new CommonResult<>(200, "success from server: payment"+serverPort, byId);
     }
+
+    @SneakyThrows
+    @GetMapping("/ok/{id}")
+    public CommonResult<String> ok(@PathVariable("id") Long id) {
+        String ok = paymentService.isOk(id);
+        return new CommonResult<>(200, "success from server: payment"+serverPort, ok);
+    }
+
+    @SneakyThrows
+    @GetMapping("/notOk/{id}")
+    public CommonResult<String> notOk(@PathVariable("id") Long id) {
+        String notOk = paymentService.isNotOK(id);
+        return new CommonResult<>(200, "success from server: payment"+serverPort, notOk);
+    }
 }
