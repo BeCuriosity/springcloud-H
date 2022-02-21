@@ -1,11 +1,8 @@
 package com.cxw.controller;
 
-import com.cxw.service.FeignServiceClient;
+import com.cxw.service.FeignHystrixServiceClient;
 import com.cxw.springcloud.entity.CommonResult;
-import com.cxw.springcloud.entity.Payment;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -23,11 +20,10 @@ import javax.annotation.Resource;
 public class HystrixController {
 
     @Resource
-    private FeignServiceClient feignServiceClient;
+    private FeignHystrixServiceClient feignServiceClient;
 
     @GetMapping("ok/{id}")
     @ResponseBody
-    @HystrixCommand
     public CommonResult<String> ok(@PathVariable Long id) throws InterruptedException {
         Thread.sleep(6000);
         return feignServiceClient.ok(id);
@@ -35,9 +31,9 @@ public class HystrixController {
 
     @GetMapping("notOk/{id}")
     @ResponseBody
-    @HystrixCommand(fallbackMethod = "notOkHandler",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000")
-    })
+//    @HystrixCommand(fallbackMethod = "notOkHandler",commandProperties = {
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000")
+//    })
     public CommonResult<String> notOk(@PathVariable Long id) {
         return feignServiceClient.notOk(id);
     }
