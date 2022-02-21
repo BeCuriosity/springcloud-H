@@ -24,7 +24,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
   instance:
-    instance-id: payment8001${random.value}
+    instance-id: ${NODE_IP:${spring.cloud.client.ip-address}}:${server.port}
     prefer-ip-address: true #eureka服务页鼠标悬停可以显示ip地址
     lease-renewal-interval-in-seconds: 30 #发送心跳时间
     lease-expiration-duration-in-seconds: 90 #距离上一次心跳的等待上限

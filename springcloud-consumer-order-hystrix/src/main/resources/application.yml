@@ -1,0 +1,21 @@
+server:
+  port: 8000
+  tomcat:
+    max-threads: 200
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+spring:
+  application:
+    name: cloud-consumer-order
+ribbon:
+  ReadTimeout: 3000 #数据传输时间
+  ConnectTimeout: 3000 #连接建立时间
+feign:
+  hystrix:
+    enabled: true #开户服务降级
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000 #全局时间

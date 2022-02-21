@@ -13,6 +13,7 @@
         <module name="spring-cloud-provider-payment8001" />
         <module name="springcloud-provider-hystrix8001" />
         <module name="untitled" />
+        <module name="springcloud-consumer-order-hystrix" />
         <module name="springcloud-consumer-order-zk" />
         <module name="springcloud-consumer-order-feign8000" />
         <module name="spring-cloud-api" />
@@ -25,6 +26,7 @@
       <module name="spring-cloud-consumer-order8000" target="1.8" />
       <module name="spring-cloud-provider-payment8001" target="1.8" />
       <module name="springcloud-consumer-order-feign8000" target="1.8" />
+      <module name="springcloud-consumer-order-hystrix" target="1.8" />
       <module name="springcloud-consumer-order-zk" target="1.8" />
       <module name="springcloud-consumer-order8000" target="1.8" />
       <module name="springcloud-eureka-server7001" target="1.8" />
