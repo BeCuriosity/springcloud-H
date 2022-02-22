@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.annotation.Resource;
 
@@ -48,6 +49,21 @@ public class PaymentController {
     @GetMapping("/notOk/{id}")
     public CommonResult<String> notOk(@PathVariable("id") Long id) {
         String notOk = paymentService.isNotOK(id);
+        DispatcherServlet servlet;
         return new CommonResult<>(200, "success from server: payment"+serverPort, notOk);
     }
+
+    @SneakyThrows
+    @GetMapping("/test1/{id}")
+    public String t1(@PathVariable("id") Long id) {
+        return "test1" + id;
+    }
+
+    @SneakyThrows
+    @GetMapping("/test2/{id}")
+    public String t2(@PathVariable("id") Long id) {
+        return "test2" + id;
+    }
+
+
 }
