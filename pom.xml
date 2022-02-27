@@ -23,6 +23,11 @@
     <module>springcloud-provider-hystrix8001</module>
     <module>springcloud-consumer-order-hystrix</module>
     <module>springcloud-gateway9527</module>
+    <module>springcloud-alibaba-nacos-provider9001</module>
+    <module>springcloud-alibaba-nacos-provider9002</module>
+    <module>springcloud-alibaba-nacos-consumer83</module>
+    <module>springcloud-alibaba-nacos-config</module>
+    <module>springcloud-alibaba-sentinel-client8401</module>
   </modules>
 
   <!--统一管理jar包版本-->
@@ -67,6 +72,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <!--mybatis -->
       <dependency>
         <groupId>org.mybatis.spring.boot</groupId>

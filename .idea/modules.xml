@@ -6,6 +6,11 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order8000/spring-cloud-consumer-order8000.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order8000/spring-cloud-consumer-order8000.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-provider-payment8001/spring-cloud-provider-payment8001.iml" filepath="$PROJECT_DIR$/springcloud-provider-payment8001/spring-cloud-provider-payment8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-H.iml" filepath="$PROJECT_DIR$/springcloud-H.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-alibaba-nacos-config/springcloud-alibaba-nacos-config.iml" filepath="$PROJECT_DIR$/springcloud-alibaba-nacos-config/springcloud-alibaba-nacos-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-alibaba-nacos-consumer83/springcloud-alibaba-nacos-consumer83.iml" filepath="$PROJECT_DIR$/springcloud-alibaba-nacos-consumer83/springcloud-alibaba-nacos-consumer83.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-alibaba-nacos-provider9001/springcloud-alibaba-nacos-provider9001.iml" filepath="$PROJECT_DIR$/springcloud-alibaba-nacos-provider9001/springcloud-alibaba-nacos-provider9001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-alibaba-nacos-provider9002/springcloud-alibaba-nacos-provider9002.iml" filepath="$PROJECT_DIR$/springcloud-alibaba-nacos-provider9002/springcloud-alibaba-nacos-provider9002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-alibaba-sentinel-client8401/springcloud-alibaba-sentinel-client8401.iml" filepath="$PROJECT_DIR$/springcloud-alibaba-sentinel-client8401/springcloud-alibaba-sentinel-client8401.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order-feign8000/springcloud-consumer-order-feign8000.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order-feign8000/springcloud-consumer-order-feign8000.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order-hystrix/springcloud-consumer-order-hystrix.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order-hystrix/springcloud-consumer-order-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-order-zk/springcloud-consumer-order-zk.iml" filepath="$PROJECT_DIR$/springcloud-consumer-order-zk/springcloud-consumer-order-zk.iml" />
