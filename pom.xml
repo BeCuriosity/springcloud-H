@@ -28,6 +28,7 @@
     <module>springcloud-alibaba-nacos-consumer83</module>
     <module>springcloud-alibaba-nacos-config</module>
     <module>springcloud-alibaba-sentinel-client8401</module>
+    <module>springcloud-alibaba-seata-order2001</module>
   </modules>
 
   <!--统一管理jar包版本-->

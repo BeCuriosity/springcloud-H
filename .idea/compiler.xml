@@ -10,6 +10,7 @@
         <module name="spring-cloud-consumer-order8000" />
         <module name="springcloud-alibaba-nacos-consumer83" />
         <module name="springcloud-alibaba-nacos-config" />
+        <module name="springcloud-alibaba-seata-order2001" />
         <module name="springcloud-consumer-order-feign8000" />
         <module name="springcloud-consumer-order-zk" />
         <module name="springcloud-eureka-server7002" />
@@ -35,6 +36,7 @@
       <module name="springcloud-alibaba-nacos-consumer83" target="1.8" />
       <module name="springcloud-alibaba-nacos-provider9001" target="1.8" />
       <module name="springcloud-alibaba-nacos-provider9002" target="1.8" />
+      <module name="springcloud-alibaba-seata-order2001" target="1.8" />
       <module name="springcloud-alibaba-sentinel-client8401" target="1.8" />
       <module name="springcloud-consumer-order-feign8000" target="1.8" />
       <module name="springcloud-consumer-order-hystrix" target="1.8" />
